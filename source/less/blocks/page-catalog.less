@@ -1,0 +1,30 @@
+.page-catalog__item {
+  margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+  .page-catalog {
+    width: @center-width-tablet;
+  }
+
+  .page-catalog__item {
+    display: flex;
+  }
+
+  .page-catalog__item {
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-catalog {
+    display: flex;
+    width: @center-width-desktop;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .page-catalog__item {
+    flex-basis: 316px;
+  }
+}
