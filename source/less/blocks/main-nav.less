@@ -53,3 +53,23 @@
     display: block;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 582px;
+    margin: 0;
+  }
+
+  .main-nav__list {
+    display: flex;
+    height: 126px;
+    flex-wrap: wrap;
+    margin-top: 26px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: @center-width-desktop;
+  }
+}
