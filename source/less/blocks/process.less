@@ -1,0 +1,150 @@
+.process {
+  width: @center-width-mobile;
+  margin: 0 auto;
+  border: solid 1px #ececec;
+  margin-bottom: 58px;
+  position: relative;
+
+  &::before {
+    .icon-property;
+    width: 101px;
+    height: 77px;
+    background: url("../img/icon-play.svg") no-repeat center;
+    top: 30%;
+    left: 30%;
+    z-index: 22;
+    cursor: pointer;
+  }
+}
+
+.process__title {
+  margin-left: 91px;
+  margin-top: 29px;
+  margin-bottom: 26px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  position: relative;
+
+  &::before {
+    .icon-property;
+    width: 32px;
+    height: 22px;
+    background: url("../img/icon-video.svg") no-repeat center;
+    transform: translate(-57px, 7px);
+  }
+}
+
+.process__image {
+  margin-bottom: 34px;
+  position: relative;
+}
+
+.process__preview {
+  margin: 0 auto;
+  width: 190px;
+  font-size: 13px;
+  line-height: 24px;
+  color: @greyish-brown;
+  font-weight: normal;
+  margin-bottom: 29px;
+}
+
+.process__order-btn {
+  width: 192px;
+  box-sizing: border-box;
+  margin: 0 auto 33px;
+}
+@media (min-width: @tablet-width) {
+  .process {
+    width: @center-width-tablet;
+    margin-bottom: 63px;
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+      top: 25%;
+      left: 45%;
+    }
+  }
+
+  .process__title {
+    order: 1;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 41px 107px;
+
+    &::before {
+      transform: translate(-60px, -1px);
+    }
+  }
+
+  .process__preview {
+    order: 2;
+    font-size: 15px;
+    line-height: 30px;
+    width: 582px;
+    margin-bottom: 40px;
+  }
+
+  .process__order-btn {
+    order: 3;
+    width: 584px;
+    margin-bottom: 46px;
+  }
+
+  .process__image {
+    order: 0;
+    width: 668px;
+    height: 455px;
+    margin-bottom: 43px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .process {
+    width: @center-width-desktop;
+    margin-bottom: 105px;
+    min-height: 455px;
+
+    &::before {
+      top: 43%;
+      left: 29%;
+    }
+  }
+
+  .process__image {
+    align-self: flex-start;
+    width: 682px;
+    margin: 0;
+  }
+
+  .process__order-btn,
+  .process__preview,
+  .process__title {
+    align-self: flex-end;
+    margin: 0;
+  }
+
+  .process__preview {
+    width: 225px;
+    margin-bottom: 51px;
+    margin-right: 67px;
+  }
+
+  .process__order-btn {
+    width: 230px;
+    margin-right: 57px;
+  }
+
+  .process__title {
+    display: block;
+    width: 150px;
+    margin-top: -360px;
+    margin-bottom: 42px;
+    margin-right: 140px;
+
+    &::before {
+      transform: translate(0px, -60px);
+    }
+  }
+}

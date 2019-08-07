@@ -1,0 +1,37 @@
+.delimeter {
+  width: 100%;
+}
+
+.delimeter--review {
+  margin-bottom: 45px;
+}
+
+.delimeter--advantages {
+  margin-bottom: 34px;
+}
+
+.delimeter--header {
+  position: absolute;
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .delimeter--review {
+    margin-bottom: 72px;
+  }
+
+  .delimeter--advantages {
+    margin-bottom: 60px;
+  }
+
+  .delimeter--header {
+    display: block;
+    transform: translateY(-50px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .delimeter--advantages {
+    margin-bottom: 70px;
+  }
+}
