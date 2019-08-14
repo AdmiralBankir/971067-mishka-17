@@ -11,10 +11,6 @@
   margin: 0 0 8px;
 }
 
-.item-of-week__img {
-  margin-bottom: 29px;
-}
-
 .item-of-week__title {
   font-size: 17px;
   line-height: 20px;
@@ -62,6 +58,12 @@
   width: @center-width-mobile;
 }
 
+.item-of-week__img-wrapper {
+  width: 260px;
+  height: 315px;
+  margin-bottom: 29px;
+}
+
 @media (min-width: @tablet-width) {
   .item-of-week__name {
     font-size: 43px;
@@ -87,11 +89,6 @@
     margin-bottom: 53px;
   }
 
-  .item-of-week__img {
-    align-self: flex-end;
-    margin-top: -280px;
-  }
-
   .item-of-week__wrapper-top {
     display: flex;
     justify-content: space-between;
@@ -113,6 +110,17 @@
 
   .item-of-week__price {
     font-size: 20px;
+  }
+
+  .item-of-week__img-wrapper {
+    width: 333px;
+    height: 404px;
+    align-self: flex-end;
+    margin-top: -280px;
+  }
+
+  .item-of-week__wrapper-bottom {
+    margin-top: -134px;
   }
 }
 
@@ -139,7 +147,7 @@
     margin-right: 50px;
   }
 
-  .item-of-week__img {
+  .item-of-week__img-wrapper {
     width: 525px;
     height: 636px;
   }
