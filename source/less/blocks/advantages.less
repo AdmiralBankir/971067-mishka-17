@@ -15,14 +15,16 @@
 
 .advantages__item {
   position: relative;
+  width: 190px;
 
   &:not(:last-child) {
-    margin-bottom: 85px;
+    margin-bottom: 82px;
   }
 
   &::before {
     .icon-property;
-    top: -45px;
+    top: -55px;
+    left: 10px;
   }
 
   &--eco {
@@ -38,6 +40,7 @@
       width: 47px;
       height: 27px;
       background: url("../img/icon-feature-money.svg") no-repeat center;
+      left: 0;
     }
   }
 
@@ -46,30 +49,40 @@
       width: 34px;
       height: 27px;
       background: url("../img/icon-feature-heart.svg") no-repeat center;
+      top: -48px;
     }
   }
 
   &--hand-made {
+    width: 210px;
     &::before {
       width: 35px;
       height: 34px;
       background: url("../img/icon-feature-ball.svg") no-repeat center;
+      left: 5px;
+      top: -50px;
     }
   }
 
   &--native {
+    width: 270px;
     &::before {
       width: 55px;
       height: 23px;
       background: url("../img/icon-feature-rocket.svg") no-repeat center;
+      top: -48px;
+      left: -5px;
     }
   }
 
   &--package {
+    width: 200px;
     &::before {
       width: 33px;
       height: 32px;
       background: url("../img/icon-feature-gift.svg") no-repeat center;
+      top: -48px;
+      left: 4px;
     }
   }
 }
@@ -90,15 +103,16 @@
 @media (min-width: @tablet-width) {
   .advantages {
     width: @center-width-tablet;
+    margin-bottom: 0;
   }
 
   .advantages__list {
-    width: 668px;
+    width: 629px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: space-between;
-    height: 430px;
+    height: 470px;
   }
 
   .advantages__title {
@@ -109,14 +123,59 @@
   .advantages__description {
     font-size: 20px;
     line-height: 22px;
+    margin: 0;
+    margin-top: 15px;
   }
 
   .advantages__item {
     width: 295px;
-    margin-bottom: 112px;
 
     &:nth-child(3n) {
       margin-bottom: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 96px;
+    }
+
+    &--eco {
+      width: 228px;
+      &::before {
+        top: -40px;
+      }
+    }
+
+    &--scandinavian {
+      width: 228px;
+      &::before {
+        top: -40px;
+        left: 0;
+      }
+    }
+
+    &--likes {
+      width: 228px;
+      &::before {
+        top: -34px;
+      }
+    }
+
+    &--hand-made {
+      &::before {
+        top: -36px;
+      }
+    }
+
+    &--native {
+      &::before {
+        top: -35px;
+      }
+    }
+
+    &--package {
+      &::before {
+        top: -36px;
+      }
     }
   }
 }
@@ -130,10 +189,13 @@
   .advantages {
     width: @center-width-desktop;
     margin: 0 auto;
-    margin-bottom: 85px;
   }
 
   .advantages__wrapper {
-    margin-left: 175px;
+    margin-left: 166px;
+  }
+
+  .advantages__list {
+    width: 649px
   }
 }

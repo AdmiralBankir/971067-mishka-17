@@ -1,37 +1,70 @@
 .delimeter {
   width: 100%;
+  height: 6px;
+}
+
+.delimeter--review,
+.delimeter--advantages {
+  background: url("../img/bg-zigzag-line.svg") center repeat-x;
+  background-size: contain;
 }
 
 .delimeter--review {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .delimeter--advantages {
-  margin-bottom: 34px;
+  margin-bottom: 26px;
 }
 
 .delimeter--header {
   position: absolute;
   display: none;
+  background: url("../img/bg-zigzag-fill.svg") center repeat-x;
+  background-size: contain;
 }
 
 @media (min-width: @tablet-width) {
+  .delimeter {
+    height: 24px;
+  }
+
   .delimeter--review {
-    margin-bottom: 72px;
+    margin-bottom: 58px;
+    background-position: 10px 5px;
   }
 
   .delimeter--advantages {
-    margin-bottom: 60px;
+    margin-bottom: 41px;
+    background-position: 10px 0;
   }
 
   .delimeter--header {
     display: block;
-    transform: translateY(-50px);
+    transform: translateY(-64px);
   }
 }
 
 @media (min-width: @desktop-width) {
+  .delimeter {
+    height: 34px;
+  }
+
   .delimeter--advantages {
-    margin-bottom: 70px;
+    background-position: 21px 0;
+    background-size: 91%;
+    margin-bottom: 48px;
+  }
+
+  .delimeter--review {
+    background-position: 21px 0;
+    background-size: 91%;
+    margin-bottom: 48px;
+  }
+
+  .delimeter--header {
+    background-position: 4px 0;
+    background-size: 109%;
+    bottom: -12px;
   }
 }

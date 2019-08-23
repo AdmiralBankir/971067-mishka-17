@@ -33,14 +33,16 @@
 .catalog-nav__item--interior a::before {
   width: 40px;
   height: 62px;
-  left: 250px;
+  left: 244px;
+  top: 23px;
   background: transparent url("../img/icon-interior.svg") no-repeat center;
 }
 
 .catalog-nav__item--toys a::before {
   width: 60px;
   height: 60px;
-  left: 240px;
+  left: 234px;
+  top: 23px;
   background: transparent url("../img/icon-toy.svg") no-repeat center;
 }
 
@@ -53,8 +55,9 @@
 @media (min-width: @tablet-width) {
   .catalog-nav {
     width: 87%;
+    min-height: 119px;
     display: flex;
-    margin-top: -103px;
+    margin-top: -113px;
   }
 
   .catalog-nav__item {
@@ -64,11 +67,37 @@
   .catalog-nav__item a {
     font-size: 20px;
     line-height: 30px;
+    padding: 28px 0;
+    padding-left: 36px;
+  }
+
+  .catalog-nav__item--interior a::before {
+    left: 257px;
+    top: 30px;
+  }
+
+  .catalog-nav__item--toys a::before {
+    left: 240px;
+    top: 32px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .catalog-nav {
     width: @center-width-desktop;
+    margin-top: -114px;
+    margin-left: 45px;
+  }
+
+  .catalog-nav__item a {
+    padding-left: 37px;
+  }
+
+  .catalog-nav__item--interior a::before {
+    left: 450px;
+  }
+
+  .catalog-nav__item--toys a::before {
+    left: 430px;
   }
 }

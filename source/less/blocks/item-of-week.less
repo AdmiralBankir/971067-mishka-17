@@ -8,14 +8,14 @@
   line-height: 30px;
   font-weight: bold;
   color: #000000;
-  margin: 0 0 8px;
+  margin: 0 0 6px;
 }
 
 .item-of-week__title {
   font-size: 17px;
   line-height: 20px;
   color: @seafoam-blue;
-  margin: 0 0 30px;
+  margin: 0 0 20px;
   text-transform: uppercase;
 }
 
@@ -32,6 +32,8 @@
   font-size: 15px;
   line-height: 20px;
   color: @greyish-brown;
+  margin-top: -20px;
+  margin-bottom: 16px;
 }
 
 .item-of-week__parameter,
@@ -51,7 +53,7 @@
   font-weight: bold;
   text-align: center;
   color: @greyish-brown;
-  margin: 0 0 28px;
+  margin: 0 0 26px;
 }
 
 .item-of-week__wrapper-bottom {
@@ -61,7 +63,7 @@
 .item-of-week__img-wrapper {
   width: 260px;
   height: 315px;
-  margin-bottom: 29px;
+  margin-bottom: 25px;
 }
 
 @media (min-width: @tablet-width) {
@@ -70,11 +72,16 @@
     line-height: 50px;
   }
 
+  .item-of-week__value {
+    width: 67%;
+  }
+
   .item-of-week__title {
     line-height: 17px;
     width: 70px;
     text-align: center;
-    padding-top: 7px;
+    padding-top: 11px;
+    margin-left: 143px;
   }
 
   .item-of-week__name,
@@ -91,8 +98,7 @@
 
   .item-of-week__wrapper-top {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 55px;
+    margin-bottom: 47px;
   }
 
   .item-of-week__description,
@@ -110,17 +116,27 @@
 
   .item-of-week__price {
     font-size: 20px;
+    margin-bottom: 35px;
   }
 
   .item-of-week__img-wrapper {
     width: 333px;
     height: 404px;
     align-self: flex-end;
-    margin-top: -280px;
+    margin-top: -257px;
   }
 
   .item-of-week__wrapper-bottom {
-    margin-top: -134px;
+    margin-top: -136px;
+  }
+
+  .item-of-week__table tr:nth-child(2) td {
+    padding-top: 6px;
+    padding-bottom: 10px;
+  }
+
+  .item-of-week__table tr:nth-child(3) td {
+    padding-top: 12px;
   }
 }
 
@@ -133,6 +149,7 @@
   .item-of-week__wrapper-top {
     justify-content: flex-start;
     margin-left: 47px;
+    z-index: 2;
   }
 
   .item-of-week__name {
@@ -145,15 +162,26 @@
     order: 1;
     padding-top: 13px;
     margin-right: 50px;
+    margin-left: 0;
   }
 
   .item-of-week__img-wrapper {
     width: 525px;
     height: 636px;
+    margin-top: -436px;
   }
 
   .item-of-week__wrapper-bottom,
   .item-of-week__wrapper-middle {
-    margin-left: 175px;
+    margin-left: 170px;
   }
+
+  .item-of-week__description {
+    margin-bottom: 64px;
+  }
+
+  .item-of-week__wrapper-bottom {
+    margin-top: -134px;
+  }
+
 }
