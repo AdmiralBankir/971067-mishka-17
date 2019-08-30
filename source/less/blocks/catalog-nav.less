@@ -20,14 +20,31 @@
 
 .catalog-nav__item {
   cursor: pointer;
+
+  &:hover {
+    height: 124px;
+    margin-top: -5px;
+  }
+
+  &:active a {
+    opacity: 0.3;
+  }
 }
 
 .catalog-nav__item--interior {
   background-color: @seafoam-blue;
+
+  &:hover {
+    background-color: @seafoam-blue-two;
+  }
 }
 
 .catalog-nav__item--toys {
   background-color: @aqua-marine;
+
+  &:hover {
+    background-color: @aqua-marine-two;
+  }
 }
 
 .catalog-nav__item--interior a::before {

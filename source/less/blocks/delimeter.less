@@ -3,8 +3,8 @@
   height: 6px;
 }
 
-.delimeter--review,
-.delimeter--advantages {
+.delimeter--advantages,
+.delimeter--review {
   background: url("../img/bg-zigzag-line.svg") center repeat-x;
   background-size: contain;
 }
@@ -23,7 +23,6 @@
   background: url("../img/bg-zigzag-fill.svg") center repeat-x;
   background-size: contain;
 }
-
 @media (min-width: @tablet-width) {
   .delimeter {
     height: 24px;
@@ -42,9 +41,16 @@
   .delimeter--header {
     display: block;
     transform: translateY(-64px);
+
+    &-inner {
+      transform: translateY(-85px);
+    }
+
+    &-catalog {
+      transform: translateY(-92px);
+    }
   }
 }
-
 @media (min-width: @desktop-width) {
   .delimeter {
     height: 34px;
@@ -65,6 +71,12 @@
   .delimeter--header {
     background-position: 4px 0;
     background-size: 109%;
-    bottom: -12px;
+    bottom: 2px;
+
+    &-inner {
+      top: 403px;
+      background-position: -4px 0;
+      background-size: 100%;
+    }
   }
 }

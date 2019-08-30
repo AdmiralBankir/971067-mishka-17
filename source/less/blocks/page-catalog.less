@@ -1,5 +1,13 @@
 .page-catalog__item {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .page-catalog {
@@ -24,9 +32,11 @@
     width: @center-width-desktop;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-left: 44px;
   }
 
   .page-catalog__item {
     flex-basis: 316px;
+    margin-bottom: 52px;
   }
 }

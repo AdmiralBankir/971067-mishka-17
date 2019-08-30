@@ -3,14 +3,25 @@
   min-height: 160px;
 }
 
+.page-footer svg {
+  &:hover {
+    fill: @aqua-marine-two;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .page-footer__logo-image {
   display: none;
+  cursor: pointer;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer__logo-image {
     display: block;
-    padding-bottom: 18px;
+    margin-top: 48px;
   }
 
   .page-footer__container {

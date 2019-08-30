@@ -5,22 +5,43 @@
   margin-bottom: 58px;
   position: relative;
 
-  &::before {
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &__icon-play {
     .icon-property;
     width: 101px;
     height: 77px;
     background: url("../img/icon-play.svg") no-repeat center;
-    top: 30%;
+    top: 25%;
     left: 30%;
     z-index: 22;
     cursor: pointer;
+
+    &:hover {
+      width: 121px;
+      height: 92px;
+      transform: translateX(-10px);
+    }
+
+    &:active {
+      width: 81px;
+      height: 62px;
+      opacity: 0.7;
+      transform: translateX(5px);
+    }
   }
 }
 
 .process__title {
   margin-left: 91px;
-  margin-top: 29px;
-  margin-bottom: 26px;
+  margin-top: 25px;
+  margin-bottom: 23px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -36,7 +57,7 @@
 }
 
 .process__image-wrapper {
-  margin-bottom: 34px;
+  margin-bottom: 21px;
   position: relative;
 }
 
@@ -47,7 +68,7 @@
   line-height: 24px;
   color: @greyish-brown;
   font-weight: normal;
-  margin-bottom: 29px;
+  margin-bottom: 25px;
 }
 
 .process__order-btn {
@@ -55,7 +76,6 @@
   box-sizing: border-box;
   margin: 0 auto 33px;
 }
-
 @media (min-width: @tablet-width) {
   .process {
     width: @center-width-tablet;
@@ -63,9 +83,9 @@
     display: flex;
     flex-direction: column;
 
-    &::before {
+    &__icon-play {
       top: 25%;
-      left: 45%;
+      left: 42%;
     }
   }
 
@@ -73,7 +93,7 @@
     order: 1;
     font-size: 20px;
     line-height: 24px;
-    margin: 0 0 41px 107px;
+    margin: 0 0 31px 107px;
 
     &::before {
       transform: translate(-60px, -1px);
@@ -85,7 +105,7 @@
     font-size: 15px;
     line-height: 30px;
     width: 582px;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
   }
 
   .process__order-btn {
@@ -98,19 +118,19 @@
     order: 0;
     width: 668px;
     height: 455px;
-    margin-bottom: 43px;
+    margin-bottom: 37px;
   }
 }
-
 @media (min-width: @desktop-width) {
   .process {
     width: @center-width-desktop;
     margin-bottom: 105px;
     min-height: 455px;
+    margin-left: 45px;
 
-    &::before {
-      top: 43%;
-      left: 29%;
+    &__icon-play {
+      top: 41%;
+      left: 28%;
     }
   }
 
@@ -129,24 +149,24 @@
 
   .process__preview {
     width: 225px;
-    margin-bottom: 51px;
-    margin-right: 67px;
+    margin-bottom: 47px;
+    margin-right: 66px;
   }
 
   .process__order-btn {
     width: 230px;
-    margin-right: 57px;
+    margin-right: 59px;
   }
 
   .process__title {
     display: block;
     width: 150px;
     margin-top: -360px;
-    margin-bottom: 42px;
+    margin-bottom: 32px;
     margin-right: 140px;
 
     &::before {
-      transform: translate(0, -60px);
+      transform: translate(0, -50px);
     }
   }
 }

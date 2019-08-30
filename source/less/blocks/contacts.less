@@ -36,9 +36,21 @@
   padding-bottom: 28px;
 }
 
-.contacts__value--email span {
+.contacts__mail-link {
+  color: @greyish-brown;
+  text-decoration: none;
   padding-bottom: 3px;
   border-bottom: solid 1px @seafoam-blue;
+
+  &:hover {
+    color: @aqua-marine-two;
+    border-bottom: solid 1px @aqua-marine-two;
+  }
+
+  &:active {
+    color: fadeout(@aqua-marine-two, 70);
+    border-bottom: solid 1px fadeout(@seafoam-blue, 70);
+  }
 }
 
 .contacts__map-wrapper {
