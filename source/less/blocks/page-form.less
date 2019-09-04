@@ -207,13 +207,12 @@
 
 .page-form__mail-icon,
 .page-form__phone-icon {
-  .icon-property();
   opacity: 0.2;
-  right: 0;
+  margin-left: 250px;
 }
 
 .page-form__phone-icon {
-  transform: translate(-35px, -40px);
+  transform: translate(-25px, -40px);
 }
 
 .page-form__mail-icon {
@@ -251,6 +250,11 @@
   .page-form {
     width: 100%;
     margin-bottom: 50px;
+  }
+
+  .page-form__mail-icon,
+  .page-form__phone-icon {
+    margin: 0;
   }
 
   .page-form__preview {
@@ -362,7 +366,14 @@
 
   .page-form__fieldset-color {
     background-color: @very-light-pink;
-    margin-bottom: 100px;
+  }
+
+  .page_form__wrapper {
+    background-color: @very-light-pink;
+
+    &--color {
+      margin-bottom: 100px;
+    }
   }
 
   .page-form__list {
@@ -462,11 +473,11 @@
   }
 
   .page-form__phone-icon {
-    transform: translate(-76px, 62px);
+    transform: translate(-46px, 62px);
   }
 
   .page-form__mail-icon {
-    transform: translate(-71px, -5px);
+    transform: translate(-48px, -5px);
   }
 
   .page-form__additional-wrapper {
@@ -542,6 +553,9 @@
 
   .page-form__fieldset-color {
     padding-bottom: 32px;
+  }
+
+  .page_form__wrapper--color {
     margin-bottom: 68px;
   }
 
@@ -570,14 +584,6 @@
     width: 686px;
   }
 
-  .page-form__phone-icon {
-    transform: translate(-240px, 62px);
-  }
-
-  .page-form__mail-icon {
-    transform: translate(-235px, -5px);
-  }
-
   .page-form__legend--add {
     margin-right: 72px;
   }
@@ -593,5 +599,13 @@
   .page-form__bottom-wrapper {
     width: 700px;
     margin-left: 220px;
+  }
+
+  .page-form__phone-icon {
+    transform: translate(-46px, 62px);
+  }
+
+  .page-form__mail-icon {
+    transform: translate(-48px, -5px);
   }
 }

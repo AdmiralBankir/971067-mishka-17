@@ -25,7 +25,7 @@
   }
 }
 
-.page-header__title-wrapper--inner {
+.page-header__title-wrapper-inner {
   background-color: @very-light-pink;
   margin: 0 auto;
 }
@@ -53,11 +53,15 @@
   }
 }
 
+.page-header__container-nav {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
 .page-header {
   position: relative;
   margin: 0 auto;
   margin-bottom: 28px;
-  max-width: 1150px;
 }
 
 .page-header--inner {
@@ -133,7 +137,7 @@
     width: 500px;
   }
 
-  .page-header__title-wrapper--inner {
+  .page-header__title-wrapper-inner {
     width: 100%;
     height: 226px;
     margin-top: -68px;
@@ -147,10 +151,10 @@
 @media (min-width: @desktop-width) {
   .page-header__title-wrapper {
     background: url("../img/hero-desktop@1x.jpg") no-repeat center;
+    background-size: 100%;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background: url("../img/hero-desktop@2x.jpg") no-repeat center;
-      background-size: cover;
     }
   }
 
@@ -160,7 +164,7 @@
     width: 615px;
   }
 
-  .page-header__title-wrapper--inner {
+  .page-header__title-wrapper-inner {
     height: 255px;
   }
 

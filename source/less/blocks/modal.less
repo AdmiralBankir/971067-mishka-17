@@ -1,0 +1,120 @@
+.modal {
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 320px;
+  height: 336px;
+  box-shadow: 0 5px 10px 0 @dark-forest-green;
+  border: solid 1px @pinkish-grey;
+  background-color: #ffffff;
+  transition-property: visibility;
+  transition-duration: 0.2s;
+  transition-delay: 0.15s;
+  z-index: 777;
+  box-sizing: border-box;
+}
+
+.modal__title {
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: 150px;
+  margin-top: 36px;
+  margin-bottom: 25px;
+}
+
+.modal__text {
+  width: 140px;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 auto 30px;
+  color: @greyish-brown;
+}
+
+.modal__size-btn-wrapper {
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+  display: flex;
+  justify-content: space-between;
+
+  & label {
+    display: flex;
+    flex-direction: column;
+    width: 82px;
+    height: 52px;
+    box-sizing: border-box;
+    border: solid 2px rgba(68, 68, 68, 0.1);
+    background-color: #ffffff;
+    cursor: pointer;
+
+    &:hover {
+      border-color: rgba(68, 68, 68, 0.3);
+    }
+
+    &:active {
+      border-color: @seafoam-blue;
+    }
+  }
+}
+
+.modal__label-text {
+  font-size: 17px;
+  line-height: 16px;
+  text-align: center;
+  color: @greyish-brown;
+  font-weight: bold;
+  padding-top: 17px;
+}
+
+.modal__btn {
+  width: 260px;
+  border: none;
+  background-color: @seafoam-blue;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+.modal__input:checked + label {
+  border-color: @seafoam-blue;
+}
+
+@media (min-width: @tablet-width) {
+  .modal {
+    width: 566px;
+    height: 336px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 57px;
+    width: 360px;
+    margin-top: 51px;
+    margin-bottom: 12px;
+  }
+
+  .modal__text {
+    font-size: 17px;
+    width: 160px;
+    margin-bottom: 16px;
+  }
+
+  .modal__size-btn-wrapper {
+    width: 350px;
+    margin-bottom: 31px;
+
+    & label {
+      width: 112px;
+    }
+  }
+
+  .modal__btn {
+    width: 350px;
+  }
+}
